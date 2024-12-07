@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+ 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+      <!-- swiper_slider -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>HOME | SP LOGISTICS</title>
+  </head>
+  <body> 
+   
+<style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden ;
+}
+.section_1{
+    height: 100vh;
+    width:100vw ;
+    
+
+
+}
+.navbar{
+    background-color: transparent;
+    padding: 10px;
+}
+.topbar a{
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: poppins ;
+    margin: 5px;
+    margin-top:0px;
+    margin-left: 5px;
+    margin-right:10px ;
+}
+.mainbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: poppins ;
+    margin: 5px;
+    margin-top:0px;
+    
+}
+.mainbar a:hover{
+    color: orangered;
+    
+    
+}
+.top1 a:hover{
+    color: orangered;
+    
+    
+}
+i{
+    margin-bottom:-2.3px ;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.35);
+    
+    
+}
+.rightbar{
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainbar{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    padding-right: 30px;
+}
+.subbar_1{
+    display: none;
+}
+.subbar_2{
+    display: none;
+}
+
+/* #subbar_1:hover ~ .subbar_1{
+    display: block;
+} */
+.top1{
+    position: fixed ;
+    width: 100vw;
+    z-index: 999;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .swiper-slide img {
+    
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+</style>
+
+
+    <div class="section_1">
+        <div class="top1">
+        <div class="topbar">
+   
+           <div class="leftbar">
+           <a href="http://#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="http://#"><i class="fa-brands fa-x-twitter"></i></a>
+           <a href="http://#"><i class="fa-brands fa-linkedin"></i></a>
+           </div>
+   
+           <div class="rightbar">
+           <span id="phone_rb"><a href="tel:+919829343166"><i class="fa-solid fa-phone"></i> +91 9829343166</a> <a href="tel:+919829343166"><i class="fa-solid fa-phone" ;"></i> +91 9829343166</a></span>
+           <span id="mail_rb">
+               <a href="mailto:jaipur@splgroups.co.in"><i class="fa-solid fa-envelope"></i> info@splgroups.co.in</a>
+           </span>
+          
+           </div>
+   
+        </div> 
+       <div class="navbar">
+           <div id="logo_1"><img src="imgs/sp_logo.png" alt="S.P LOGISTICS"></div>
+
+
+           <nav>
+             <ol class="mainbar">
+               <li><a href="http://#">HOME</a></li>
+               <li><a href="http://#">ABOUT US</a></li>
+               <li><a href="http://#">ASSOCIATES</a></li>
+               <li><a href="" id="subbar_1">SERVICES</a>
+                   <!-- <ol class="subbar_1">
+                       <li><a href="#">FTL</a></li>
+                       <li><a href="#">PTL</a></li>
+                       <li><a href="#">OVER DIMENSIONAL CARGO (ODC)</a></li>
+                       <li><a href="#">BREAK BULK</a></li>
+                       <li><a href="#">SUPPLY CHAIN</a></li>
+                       <li><a href="#">WAREHOUSING</a></li>
+                       <li><a href="#">SPL SPECIAL</a></li>
+                       <li><a>ADDITIONAL SERVICES</a>
+                       <ol class="subbar_2">
+                           <li><a href="#">C&F AGENTS</a></li>
+                           <li><a href="#">3PL SERVICES</a></li>
+                       </ol></li>
+       
+                   </ol> -->
+               </li>
+               <li><a href="http://#">PICKUP REQUEST</a></li>
+               <li><a href="http://#">LOGIN</a></li>
+               <li><a href="http://#">CONTACT</a></li>
+               
+             </ol>
+           </nav>
+
+           </div>
+      </div>
+
+         <!-- Swiper -->
+         <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/ai_1.jpeg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="imgs/ai_2.jpeg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="imgs/ai_3.jpeg" alt="Slide 3"></div>
+            <!-- Add more slides as needed -->
+          </div>
+          <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+
+
+   <!-- JavaScript -->
+   <script src="index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+   
+   <script>
+     // Initialize Swiper with autoplay, loop, and navigation options
+     const swiper = new Swiper('.mySwiper', {
+      loop: true,  // Infinite loop
+      speed: 600,  // Transition speed
+      autoplay: { 
+        delay: 3000, 
+        disableOnInteraction: false  // Autoplay will continue after interaction
+      },
+      pagination: { 
+        el: '.swiper-pagination', 
+        dynamicBullets: true 
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',  // Next button
+        prevEl: '.swiper-button-prev',  // Previous button
+      }
+    });
+
+  </script>
+   </script>
+   
+  </body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>HOME | SP LOGISTICS</title>
+</head>
+<body>
+
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .section_1 {
+    height: 100vh;
+    width: 100vw;
+  }
+  .navbar {
+    background-color: transparent;
+    padding: 10px;
+  }
+  /* Swiper styles */
+  .swiper-container {
+    width: 100%;
+    height: 100vh;  /* Set the swiper container to take the full height */
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    width: 100%; /* Make the image fill the slide */
+    height: 100%; /* Make the image fill the slide */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+</style>
+
+<!-- Section 1 with Swiper -->
+<div class="section_1">
+  <div class="top1">
+    <div class="navbar">
+      <div id="logo_1"><img src="imgs/sp_logo.png" alt="S.P LOGISTICS"></div>
+      <nav>
+        <ol class="mainbar">
+          <li><a href="http://#">HOME</a></li>
+          <li><a href="http://#">ABOUT US</a></li>
+          <li><a href="http://#">ASSOCIATES</a></li>
+          <li><a href="http://#">SERVICES</a></li>
+          <li><a href="http://#">PICKUP REQUEST</a></li>
+          <li><a href="http://#">LOGIN</a></li>
+          <li><a href="http://#">CONTACT</a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slides with Images -->
+      <div class="swiper-slide"><img src="imgs/ai_2.jpeg" alt="Slide 2"></div>
+      <div style="width: 100%; height:100vh;" class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDUNeGnRrohEoNk63mXhf0ATWOxpvMXplMw&s" alt="Slide 3"></div>
+      <div class="swiper-slide"><img src="imgs/ai_2.jpeg" alt="Slide 2"></div>
+      <div class="swiper-slide"><img src="imgs/ai_3.jpeg" alt="Slide 3"></div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>.....................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    0
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+   var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+
+</body>
+</html>
